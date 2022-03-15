@@ -4,7 +4,7 @@
 LNX=/home/qy/linux
 cd / 	
 find  $LNX                                                                \
-	-path "$LNX/arch/*" ! -path "$LNX/arch/arm64*" -prune -o               \
+	-path "$LNX/arch/*" ! -path "$LNX/arch/arm64*" ! -path "$LNX/arch/x86*" -prune -o               \
 	-path "$LNX/Documentation*" -prune -o                                 \
 	-path "$LNX/scripts*" -prune -o                                       \
 	-path "$LNX/drivers*" -prune -o                                       \
